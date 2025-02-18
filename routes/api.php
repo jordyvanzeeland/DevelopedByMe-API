@@ -21,6 +21,12 @@ Route::group([
     Route::get("project/{id}", 'App\Http\Controllers\ProjectsController@getProject');
     Route::put("project/{id}", 'App\Http\Controllers\ProjectsController@updateProject');
     Route::delete("project/{id}", 'App\Http\Controllers\ProjectsController@deleteProject');
+
+    Route::get("skills", 'App\Http\Controllers\SkillsController@getAllSkills');
+    Route::post("skills", 'App\Http\Controllers\SkillsController@insertSkill');
+    Route::get("skill/{id}", 'App\Http\Controllers\SkillsController@getSkill');
+    Route::put("skill/{id}", 'App\Http\Controllers\SkillsController@updateSkill');
+    Route::delete("skill/{id}", 'App\Http\Controllers\SkillsController@deleteSkill');
 });
 
 
